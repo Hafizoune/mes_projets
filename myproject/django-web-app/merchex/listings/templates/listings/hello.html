@@ -1,0 +1,13 @@
+{% load static %}
+<html>
+    <head><title>Merchex</title><head>
+    <link rel="stylesheet" href="{% static 'listings/styles.css' %}" />
+    <body>
+        <p>Mes groupes préférés sont :</p>
+        <ul>
+            {% for band in bands %}
+            <li>{{ band.name }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
